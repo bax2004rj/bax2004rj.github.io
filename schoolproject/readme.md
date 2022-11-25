@@ -1,0 +1,2 @@
+# random school project
+This directory is a project for school, and is reminiscent of a blog in refrence to Into The Wild. I am using github as a place to host and test this on. This will likely be removed on 1/1/23
