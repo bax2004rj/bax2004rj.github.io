@@ -10,39 +10,9 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Source Sans Pro", sans-serif;}
 body, html {
   height: 100%;
-  color: #777;
+  color: rgb(26, 26, 26);
   line-height: 1.8;
 }
-
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('/cdn/parallax1.jpg');
-  min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("/cdn/parallax2.jpg");
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("/cdn/parallax3.jpg");
-  min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -88,6 +58,11 @@ body, html {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+}
+.main {
+  margin-left: 32;
+  margin-right: 160;
+  padding: 0px 10px;
 }
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
@@ -138,6 +113,7 @@ body, html {
   color: white;
 }
 </style>
+
 <script>
   // When the user scrolls the page, execute myFunction
   window.onscroll = function() {myFunction()};
@@ -168,11 +144,12 @@ body, html {
     <a href="//bax2004rj.github.io/schoolproject/about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">About us</a>
     <a href="//bax2004rj.github.io/schoolproject/main.html#stories" class="w3-bar-item w3-button" onclick="toggleFunction()">Stories</a>
   </div>
-</div>
-<div class="header">
-  <div class="progress-container">
-    <div class="progress-bar" id="myBar"></div>
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
   </div>
+  
 </div>
 
 <!-- The social media icon bar -->
@@ -184,20 +161,21 @@ body, html {
   <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
 </div>
 
-<div class="w3-container w3-margin-left">
+<div class="main">
 <!--insert text below-->
 <h1>ARCHIVE: How conformity is a lie and why I am happier as a nonconformist</h1>
 <h5>11/15/1991</h5>
 <div class="chip">
   <img src="//bax2004rj.github.io/schoolproject/CDN/Chris-McCandless-008.png" alt="Person" width="96" height="96">
   Chris McCandless
-  <span class="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+</div>
 <!-- Text here -->
 <p>As I have gone through life, I have realised that I have been lied to. My parents have tried to make me like them and have made me believe that the only way to be happy in life is to conform to a standard. This includes but is not limited to having a stable job, having gone to college, and having a stable family. However, this approach to happiness is flawed and doesn't apply to everyone, including myself.  I think conforming to standards is not a good way to lead a prosperous life, and should be more focused on being ourselves for once.</p>
-<p>Throughout my life, I have lived in a very conformist family. They have made it a point to conform to the standard I have previously mentioned, and because of that, I am in college. I do pretty well in most of the things I do, but I don't like the conformity involved.</p>
-<p>Thanks to my recent experience of hitchhiking across America, I have experienced a taste of nonconformity and just being myself. This has sparked some of my happier moments, and I feel it solidifies the fact that conformity is a complete lie.</p>
+<p>Throughout my life, I have lived in a very conformist family. They have made it a point to conform to the standard I have previously mentioned, and because of that, I was forced through college. I did pretty well in most of the things I did, but I didn't like the conformity involved. After I graduated, I decided to leave town, and live fully on my own. This led me to hitchhike across the American Southwest (and maybe even a small bit of Mexico), I have experienced a taste of nonconformity and just being myself. This has sparked some of my happier moments, and I feel it solidifies the fact that conformity is a complete lie.</p>
+<p>Thanks to my experiences, I have experienced a taste of conformity and nonconformity</p>
 <!-- Footer -->
 </div>
+
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <p>Hosted on <a href="https://github.io/" title="Github" target="_blank" class="w3-hover-text-green">Github Pages</a></p>
