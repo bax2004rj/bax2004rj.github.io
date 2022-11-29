@@ -13,6 +13,16 @@ body, html {
   color: #777;
   line-height: 1.8;
 }
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -196,7 +206,7 @@ body, html {
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
-    <a href="//bax2004rj.github.io/schoolproject/post.html">
+    <a href="//bax2004rj.github.io/schoolproject/main.html#stories">
       <div class="numbertext">1 / 2</div>
       <img src="CDN/intothewild-77217260.jpg" style="width:100%">
       <div class="text">The greatest, from our archives</div>
@@ -219,6 +229,35 @@ body, html {
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+
+
+<div class="stories">
+  <h3 style="color:#04AA6D">Featured articles from the past</h3>
+  <a href = "//bax2004rj.github.io/schoolproject/post.html">
+    <div class="card">
+      <img src="CDN/Chris-McCandless-008.png" alt="The bus" style="width:256px">
+      <div class="container">
+        <h4><b>ARCHIVE: Tramping Across America: A Guide</b></h4>
+        <p>A guide on how to live a carefree lifestyle</p>
+      </div>
+    </div>
+  </a>
+  <div class="card">
+    <img src="CDN/Chris-McCandless-008.png" alt="The bus" style="width:256px">
+    <div class="container">
+      <h4><b>ARCHIVE: In Memoriam: Chris McCandless</b></h4>
+      <p>1968-1992</p>
+    </div>
+  </div>
+  <h3 style="color:#00c27b">The latest news</h3>
+  <div class="card">
+    <img src="CDN/2britishmenflewakiteinapublicplace.png" alt="This will destabilise the economy" style="width:256px">
+    <div class="container">
+      <h4><b>Two men from London fly a kite in a public park for the first time</b></h4>
+      <p>The ending will shock you!</p>
+    </div>
+  </div>
 </div>
 
 <!-- Text here -->
