@@ -62,35 +62,98 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Source Sans Pro", sans-serif;}
         <h3>Featured Projects</h3>
         <p>Take a look at my most notable projects!</p>
         <div class="w3-row w3-padding-large">
-        <a>
+        <button onclick="document.getElementById('project1').style.display='block'">
         <div class="w3-col w3-round-xlarge w3-hover-shadow w3-theme-l5" style="width: 256px;">
             <img src="/resources/proj_1_3.jpg" style="width: 256px;"> 
             <div class="w3-container w3-center">
                 <p>Robotic Arm</p>
             </div>
         </div>
-        </a>
-        <a>
+        </button>
+        <button onclick="document.getElementById('project2').style.display='block'">
         <div class="w3-col w3-round-xlarge w3-hover-shadow w3-theme-l4" style="width: 256px;">
             <img src="/resources/proj_2.jpg" style="width: 256px;">
             <div class="w3-container w3-center">
                 <p>Automatic Etch-A-Sketch</p>
             </div>
         </div>
-        </a>
-        <a>
+        </button>
+        <button onclick="document.getElementById('project3').style.display='block'">
         <div class="w3-col w3-round-xlarge w3-hover-shadow w3-theme-l3" style="width: 256px;">
             <img src="/resources/proj_3.jpg" style="width: 256px;">
             <div class="w3-container w3-center">
-                <p>Light-Up Ghost Decoration</p>
+                <p>LED Ghost Decoration</p>
             </div>
         </div>
-        </a>
+        </button>
     </div>
+    </div>
+    <div id = "project1" class="w3-modal">
+        <div class="w3-modal-content w3-card-4">
+            <header class="w3-container w3-theme-l5"> 
+                <span onclick="document.getElementById('project1').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+                <h2>Robotic Arm</h2>
+            </header>
+            <div class="w3-col">
+            <div class="w3-row">
+                <img src="/resources/proj_1_3.jpg" style="width: 256px;">
+            </div>
+            <div class="w3-row w3-padding-16 w3-container">
+                <p>This project was the first Hackathon I attended at Florida Polythchnic. My team's goal was to assemble and program a robotic arm in 6 hours.</p>
+                <p>I assembled the electronics and wrote the code. I completed this in October 2023. While the project didn't go as expected, it provided a good experience in teamwork.</p>
+            </div>
+            </div>
+            <footer>
+                <a href = "/resources/Hackathon_Presentation.pptx" class="w3-button w3-green w3-round-xlarge w3-right"><i class="fa fa-file-text"></i> View the presentation</a>
+            </footer>
+        </div>
+    </div>
+    <div id = "project2" class="w3-modal">
+        <div class="w3-modal-content w3-card-4">
+            <header class="w3-container w3-theme-l5"> 
+                <span onclick="document.getElementById('project2').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+                <h2>Automatic Etch-A-Sketch</h2>
+            </header>
+            <div class="w3-col">
+            <div class="w3-row">
+                <img src="/resources/proj_2.jpg" style="width: 256px;">
+            </div>
+            <div class="w3-row w3-padding-16 w3-container">
+                <p>This project was the second Hackathon I attended at Florida Polythchnic. My team's goal was to automate an Etch-A-Sketch in 6 hours</p>
+                <p>I wrote the code and consulted on the electronics. I completed this in March 2024. This project was sucessful.</p>
+                <p>This project is a perfect demonstration of how I work on teams.</p>
+            </div>
+            </div>
+            <footer>
+                <a href = "/resources/Hackathon2_Presentation.pptx" class="w3-button w3-green w3-round-xlarge w3-right"><i class="fa fa-file-text"></i> View the presentation</a>
+            </footer>
+        </div>
+    </div>
+    <div id = "project3" class="w3-modal">
+        <div class="w3-modal-content w3-card-4">
+            <header class="w3-container w3-theme-l5"> 
+                <span onclick="document.getElementById('project2').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+                <h2>LED Ghost Decoration</h2>
+            </header>
+            <div class="w3-col">
+            <div class="w3-row">
+                <img src="/resources/proj_3.jpg" style="width: 256px;">
+            </div>
+            <div class="w3-row w3-padding-16 w3-container">
+                <p>This project is a personal project I return to every October. I usually challenge myself to improve the design in some way.</p>
+                <p>I designed the electronics and, in previous years, wrote the code for it. It is made from an old Halloween costume, and is powered by an ESP32 micro-controller, allowing it to be used as a smart bulb.</p>
+                <p>The version pictured is my 2022 version.</p>
+                <p>This work showcases my engineering expertise.</p>
+            </div>
+            </div>
+        </div>
     </div>
     <div class="w3-content w3-container w3-padding-64" id="resume">
         <h3>My Resume</h3>
-        <a href = "/resources/Richard_Carter_Resume.pdf" class="w3-button w3-green w3-round-xlarge"><i class="fa fa-file-text"></i> View it here</a>
+        <a href = "/resources/Richard_Carter_Resume.pdf" class="w3-button w3-green w3-round-xlarge w3-center"><i class="fa fa-file-text"></i> View it here</a>
     </div>
     <div class="w3-content w3-container w3-padding-64" id="getintouch">
         <h3>Get in touch!</h3>
