@@ -8,6 +8,42 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Source Sans Pro", sans-serif;}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/resources/parallax1.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/resources/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/resources/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
 </style>
 <title>Home | Richard Carter</title>
 <body>
@@ -39,16 +75,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Source Sans Pro", sans-serif;}
           <a href="//bax2004rj.github.io//resources/Richard_Carter_Resume.pdf" class="w3-bar-item w3-button" onclick="toggleFunction()">Resume</a>
         </div>
       </div>
-    <div class="w3-row w3-padding-large" id="aboutme">
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">Richard</span> Carter</span>
+    </div>
+    </div>
+    <div>
+    <div class="w3-row w3-padding-64" id="aboutme">
         <div class="w3-col m6 w3-center w3-padding-64">
-            <p><b><i class="fa fa-user w3-margin-right"></i>Richard Carter</b></p><br>
             <img src="/resources/headshot.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
         </div>
         <div class="w3-col m6 w3-center w3-padding-64">
             <h3>About Me</h3>
             <p>I am an Electrical Engineering student from New Port Richey, Florida. I am currently studying at Florida Polytechnic in Lakeland, Florida. Ever since I got into computers as a child, I have been interested and passionate in everything about electronics. I especially enjoy working with computers. Outside of electrical engineering, I am interested in coding, 3D printing and videogames. More specifically, I am experienced in programming languages like Python, C and C++ and through this knowledge, I am used to all major operating systems. I also have experience and certifications in various CAD and EDA programs. I am also able to use office software effectively.</p> 
 
-                <p>I value getting things done on time, and done correctly.  I am a quick learner who enjoys solving problems and can be flexible. Through the numerous team projects I have been involved in, I have learned to be a team player and can be a useful asset in a team.</p>
+            <p>I value getting things done on time, and done correctly.  I am a quick learner who enjoys solving problems and can be flexible. Through the numerous team projects I have been involved in, I have learned to be a team player and can be a useful asset in a team.</p>
             
         </div>
     </div>
@@ -58,6 +99,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Source Sans Pro", sans-serif;}
 
         <p>I am seeking an internship in Electrical Engineering in the hopes that I can gain further experience in the field. I also hope to use the experience from these internships to obtain connections within the industry and make it into an entry-level position to start my career. </p>
     </div>
+    </div>
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+          <span class="w3-xxlarge w3-text-white w3-wide">Featured Projects</span>
+        </div>
+      </div>
     <div class="w3-content w3-container w3-padding-64" id="projects">
         <h3>Featured Projects</h3>
         <p>Take a look at my most notable projects!</p>
@@ -155,8 +202,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Source Sans Pro", sans-serif;}
         <h3>My Resume</h3>
         <a href = "/resources/Richard_Carter_Resume.pdf" class="w3-button w3-green w3-round-xlarge w3-center"><i class="fa fa-file-text"></i> View it here</a>
     </div>
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+          <span class="w3-xxlarge w3-text-white w3-wide">Get in touch!</span>
+        </div>
+      </div>
     <div class="w3-content w3-container w3-padding-64" id="getintouch">
-        <h3>Get in touch!</h3>
         <p><i class="fa fa-envelope"></i> Email: <a href="mailto:rcarter5867@floridapoly.edu">rcarter5867@floridapoly.edu</a></p>
     </div>
     </body>
